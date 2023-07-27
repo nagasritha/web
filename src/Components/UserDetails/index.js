@@ -256,7 +256,7 @@ const countdownList=[
 ]
 const UserDetails=()=><div>
 <NavBar/>
-<div style={{ paddingTop: '60px' }}>
+<div style={{ paddingTop: '54px' }}>
    <div className='blue-container'>
         <div className='first'>
             <h1 className='first-title'>WEBSITE GRAPHICS MARKETING APPLICATION</h1>

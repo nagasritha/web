@@ -2,12 +2,12 @@
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid transparent;
-    animation: typing 1s steps(20, end);
+    animation: typing 1s steps(22, end);
   }
   
   
 .typing {
-    animation: typing 1s steps(20, end);
+    animation: typing 1s steps(22, end);
   }
   
   .exit {

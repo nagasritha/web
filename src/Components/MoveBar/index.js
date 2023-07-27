@@ -31,7 +31,6 @@ class MoveBar extends Component{
     const {currentStatus}=this.state
     console.log(currentStatus)
     const {classValue,list}=this.props
-    const inputClass=currentStatus ? 'paused' : ''
     return (
     <div className={`${classValue} ${currentStatus ? 'paused' : ''}`}>
     <div className="marquee-content">

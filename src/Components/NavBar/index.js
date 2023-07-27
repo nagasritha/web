@@ -44,8 +44,8 @@ const Optional=()=>{
 )
    }
 
-const SubList=(propss)=>{
-    const {itemDetails}=propss
+const SubList=(props)=>{
+    const {itemDetails}=props
     const {comment}=itemDetails
     const [isActive,setISActive]=useState(true)
     const toggle=()=>{
@@ -72,7 +72,6 @@ const SimpleElement=(props)=>{
         </div>
     )
 }
-
 const MenuBar=(props)=>{
     const {cancel}=props
     const [isActive,setISActive]=useState({

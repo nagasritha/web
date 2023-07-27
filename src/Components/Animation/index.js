@@ -24,7 +24,7 @@ const AnimatedParagraph = (props) => {
             setDisplayText([]);
           }, 1000); 
         }
-      }, 100); // Speed of animation (milliseconds)
+      }, 200); // Speed of animation (milliseconds)
 
       return () => clearInterval(interval);
     }
