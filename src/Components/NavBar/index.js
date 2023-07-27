@@ -44,8 +44,8 @@ const Optional=()=>{
 )
    }
 
-const SubList=(props)=>{
-    const {itemDetails}=props
+const SubList=(propss)=>{
+    const {itemDetails}=propss
     const {comment}=itemDetails
     const [isActive,setISActive]=useState(true)
     const toggle=()=>{

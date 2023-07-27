@@ -22,7 +22,7 @@ const AnimatedParagraph = (props) => {
           setTimeout(() => {
             setIsAnimating(true);
             setDisplayText([]);
-          }, 1000); // Time before restarting the animation (milliseconds)
+          }, 1000); 
         }
       }, 100); // Speed of animation (milliseconds)
 

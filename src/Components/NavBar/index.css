@@ -51,10 +51,7 @@
 
 nav{
     padding:10px;
-   
-  top: 0;
-  left: 0;
-  width: 100%;
+    width: 100%;
     background-color:#ffffff;
     display:flex;
     flex-direction:column;
