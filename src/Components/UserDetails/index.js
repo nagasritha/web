@@ -265,10 +265,7 @@ const UserDetails=()=><div>
         </div>
         <MoveBar classValue='marquee-container1' list={firstCardsList}/>
     </div>
-    <div className='container-marquee'>
-        
-        <MoveBar className='marquee-container2' list={specialCardsList}/>
-      </div>
+    <MoveBar classValue='marquee-container2' list={specialCardsList}/>
       <div className='flex'>
             <div className='first'>
                <h1 className='part2-heading'>Why to take your business Online?</h1>
@@ -352,14 +349,15 @@ const UserDetails=()=><div>
           {iconsList.map(item=><IconsData key={item.color} value={item}/>)}
         </div>
       </div>
-      <div className='addPadding color-blue align-center' style={{display:'flex',justifyContent:'center'}}>
+      <div className='addPadding color-blue align-center' style={{display:'flex',flexWrap:'wrap',justifyContent:'center'}}>
         {countdownList.map(item=><CountDown key={item.num} itemDetails={item}/>)}
       </div>
       <div>
-        <h1 className='buttonType'>Webingo was featured on</h1>
-        <div className='over'>
-          <MoveBar className='marquee-container2' list={specialCardsList}/>
-      </div>
+        <div style={{display:'flex',justifyContent:'space-between'}}>
+          <h1 className='buttonType'>Webingo was featured on</h1>
+          <img src='https://res.cloudinary.com/dwoqcvsxt/image/upload/v1690443126/announcement_a1v4n9.png' className='toggle' alt='toggle'/>
+        </div>
+        <MoveBar classValue='marquee-container3' list={specialCardsList}/>
       </div>
       <div className='column-style'>
            <p className='firAni'>LET’S BUILD SOMETHING TOGETHER</p>
