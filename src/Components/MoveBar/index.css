@@ -1,8 +1,12 @@
+  .inlineblock{
+    padding:10px;
+  }
   .marquee-container1{
     overflow: hidden;
-    position: relative;
+    position:relative;
     width: 400px;
     height: 400px;
+    padding:10px;
   }
   .marquee-container2{
     overflow: hidden;

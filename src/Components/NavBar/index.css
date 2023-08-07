@@ -58,6 +58,7 @@ nav{
     flex-direction:column;
     min-height:50px;
     margin-top:0px;
+    position:fixed;
 }
 .style{
     display:flex;

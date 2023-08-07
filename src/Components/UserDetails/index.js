@@ -1,12 +1,9 @@
 import {AiOutlineRight} from 'react-icons/ai'
 import React, {useState,useEffect} from 'react'
-import {BiSolidPhoneCall,BiLogoTwitter} from 'react-icons/bi'
-import {CiFacebook} from 'react-icons/ci'
-import {AiOutlineInstagram,AiFillCaretRight} from 'react-icons/ai'
-import {GrLinkedinOption,GrMail} from 'react-icons/gr'
-import {SlSocialYoutube} from 'react-icons/sl'
-import {BsWhatsapp} from 'react-icons/bs'
-import {ImLocation} from 'react-icons/im'
+import {BiSolidPhoneCall,BiLogoTwitter,BiSolidLocationPlus} from 'react-icons/bi'
+import {AiOutlineInstagram,AiFillCaretRight,AiTwotoneMail} from 'react-icons/ai'
+import {BsWhatsapp,BsFacebook,BsLinkedin,BsYoutube} from 'react-icons/bs'
+
 import NavBar from '../NavBar'
 import MoveBar from '../MoveBar'
 import './index.css'
@@ -255,17 +252,21 @@ const countdownList=[
   },
 ]
 const UserDetails=()=><div>
-<NavBar/>
 <div style={{ paddingTop: '54px' }}>
-   <div className='blue-container'>
+  <div id='section1'>
+      <div className='blue-container'>
+      
         <div className='first'>
             <h1 className='first-title'>WEBSITE GRAPHICS MARKETING APPLICATION</h1>
             <p className='first-para'>Digital IT Sollutions for Transforming and innovating Businesses.</p>
             <button type='button' className='first-but'>View Portfolio <AiOutlineRight/></button>
         </div>
         <MoveBar classValue='marquee-container1' list={firstCardsList}/>
-    </div>
-    <MoveBar classValue='marquee-container2' list={specialCardsList}/>
+        </div>
+        <MoveBar classValue='marquee-container2' list={specialCardsList}/>
+      </div>
+  <div id='section2'>
+        
       <div className='flex'>
             <div className='first'>
                <h1 className='part2-heading'>Why to take your business Online?</h1>
@@ -391,7 +392,7 @@ const UserDetails=()=><div>
         <div style={{width:'200px'}}>
           <h1>Contact Us</h1>
                <div className='row'>
-                        <GrMail className='bullet' style={{fontSize:'40px', marginRight:'10px'}}/>
+                        <AiTwotoneMail className='bullet' style={{fontSize:'40px', marginRight:'10px'}}/>
                         <div>
                           <h1>Email</h1>
                           <p>info@webingo.in</p>
@@ -405,7 +406,7 @@ const UserDetails=()=><div>
                         </div>
                     </div>
                     <div className='row'>
-                        <ImLocation style={{fontSize:'40px', marginRight:'10px'}} className='bullet'/>
+                        <BiSolidLocationPlus style={{fontSize:'40px', marginRight:'10px'}} className='bullet'/>
                         <div>
                           <h1>Address</h1>
                           <p>7th Floor, Monibhandar Building Webel Bhavan Premises, Sector V, Ring Rd, Bidhannagar, West Bengal 700091</p>
@@ -493,18 +494,22 @@ const UserDetails=()=><div>
       </div>
       <div className='last-info-container'>
           <div className='socialLogos'>
-            <CiFacebook style={{fontSize:'25px' ,marginRight:'10px'}}/>
+            <BsFacebook style={{fontSize:'25px' ,marginRight:'10px'}}/>
             <BiLogoTwitter style={{fontSize:'25px', marginRight:'10px'}}/>
             <AiOutlineInstagram style={{fontSize:'25px', marginRight:'10px'}}/>
-            <GrLinkedinOption style={{fontSize:'25px', marginRight:'10px'}}/>
-            <SlSocialYoutube style={{fontSize:'25px', marginRight:'10px'}}/>
+            <BsLinkedin style={{fontSize:'25px', marginRight:'10px'}}/>
+            <BsYoutube style={{fontSize:'25px', marginRight:'10px'}}/>
             <BsWhatsapp style={{fontSize:'25px', marginRight:'10px'}}/>
-            <GrMail style={{fontSize:'25px', marginRight:'10px'}}/>
+            <AiTwotoneMail style={{fontSize:'25px', marginRight:'10px'}}/>
           </div>
           <p>Copyright © 2017-23 Webingo. All rights reserved.</p>
           <img src='https://res.cloudinary.com/dwoqcvsxt/image/upload/v1690389557/lastImage_zzl0kr.png' alt='lastImage' className='lastImage'/>
       </div>
+      <a href='#section1'><button className='navigate' type='button'>go up</button></a> 
+    </div>  
+    
 </div>
+<NavBar/>
 </div>
 
 export default UserDetails

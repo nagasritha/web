@@ -24,7 +24,7 @@ class MoveBar extends Component{
    activateInterval=()=>{
    interval = setInterval(() => {
       this.setState(prevState=>({currentStatus:!prevState.currentStatus})); 
-    }, 1000);
+    }, 100);
    }
    
   render(){
@@ -32,11 +32,13 @@ class MoveBar extends Component{
     console.log(currentStatus)
     const {classValue,list}=this.props
     return (
-    <div className={`${classValue} ${currentStatus ? 'paused' : ''}`}>
+    <div className='inlineblock'>
+      <div className={`${classValue} ${currentStatus ? 'paused' : ''}`}>
     <div className="marquee-content">
       {list.map(item=><DisplayItem key={item.id} itemDetails={item}/>)}
     </div>
   </div>
+    </div>
   )
     }
 };
