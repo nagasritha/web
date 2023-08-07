@@ -1,5 +1,4 @@
 import {AiOutlineRight} from 'react-icons/ai'
-import React, {useState,useEffect} from 'react'
 import {BiSolidPhoneCall,BiLogoTwitter,BiSolidLocationPlus} from 'react-icons/bi'
 import {AiOutlineInstagram,AiFillCaretRight,AiTwotoneMail} from 'react-icons/ai'
 import {BsWhatsapp,BsFacebook,BsLinkedin,BsYoutube} from 'react-icons/bs'
@@ -10,12 +9,10 @@ import './index.css'
 import AnimatedParagraph from '../Animation'
 
 const Cards=(props)=>{
-    const [isActive,setISActive]=useState(true)
-    const bool=()=>setISActive(!isActive)
     const {itemDetails}=props
     const {url,h1,li,p,classValue} = itemDetails
-    return <div className={`card tilt-card ${classValue}`} onMouseEnter={bool} onMouseLeave={bool}>
-      <img src={url} alt={h1} className={isActive ?'show onLine':'hide'}/>
+    return <div className={`card tilt-card ${classValue} display`}>
+      <img src={url} alt={h1} className='display sizediff'/>
       <h1>{h1}</h1>
       <div className='onLine'>
         {li.map(item=>(
@@ -24,7 +21,7 @@ const Cards=(props)=>{
           <hr className='bar'/>
         </div>))}
         </div>
-      <p className={isActive?'hide':'show onLine'}>{p}</p>
+      <p className='hide'>{p}</p>
     </div>
 
   }
@@ -61,11 +58,9 @@ classValue:'bgcolor2'},
 }
 ]
 const DisplayImage=(props)=>{
-  const [isActive,setISActive]=useState(true)
-    const bool=()=>setISActive(!isActive)
   const {image}=props 
-return <div onMouseEnter={bool} onMouseLeave={bool}>
-  <img src={image} alt='logos' className={`circularStyle ${isActive?null:'border'}`}/>
+return <div>
+  <img src={image} alt='logos' className='circularStyle'/>
 </div>
 }
 const SecondCardStyle=(props)=>{

@@ -232,7 +232,7 @@
     align-items: center;
  }
  .bold{
-    font-size:20px;
+    font-size:15px;
     font-family:'Roboto';
     margin-right:4px;
  }
@@ -251,6 +251,9 @@
     cursor:pointer;
     outline: #272c38;
     padding:20px;
+ }
+ .circularStyle:hover{
+    border:2px solid black;
  }
  .border{
     border:4px solid #4d5775;
@@ -465,4 +468,22 @@ button{
     padding:5px;
     font-weight:500;
     font-size:20px;
+}
+.display{
+    display: flex;
+    flex-direction:column;
+    width:250px;
+}
+.hide{
+    display:none;
+}
+.display:hover .display{
+ display:none;
+}
+.display:hover .hide{
+    display:flex;
+}
+.sizediff{
+    width:100px;
+    height:100px;
 }
