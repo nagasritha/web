@@ -6,7 +6,6 @@ import {BsWhatsapp,BsFacebook,BsLinkedin,BsYoutube} from 'react-icons/bs'
 import NavBar from '../NavBar'
 import MoveBar from '../MoveBar'
 import './index.css'
-import AnimatedParagraph from '../Animation'
 
 const Cards=(props)=>{
     const {itemDetails}=props
@@ -283,7 +282,7 @@ const UserDetails=()=><div>
             </div>
       </div>
       <div className='overLapingelement'>
-        <p className='para-line'>Need <span className='spanedColor'><AnimatedParagraph text='Solutions to all your business Complications?'/></span></p>
+        <p className='para-line'>Need <span className='spanedColor'>'Solutions to all your business Complications?'</span></p>
         <button type='button' className='third-but'>Get in Touch</button>
       </div>
       <div className='addPadding color-blue align-center'>
