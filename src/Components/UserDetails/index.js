@@ -257,9 +257,9 @@ const UserDetails=()=><div>
             <button type='button' className='first-but'>View Portfolio <AiOutlineRight/></button>
         </div>
         <MoveBar classValue='marquee-container1' list={firstCardsList}/>
-        </div>
-        <MoveBar classValue='marquee-container2' list={specialCardsList}/>
       </div>
+        <div className='padding0'><MoveBar classValue='marquee-container2' list={specialCardsList}/></div>
+   </div>
   <div id='section2'>
         
       <div className='flex'>

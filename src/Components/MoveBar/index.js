@@ -1,6 +1,6 @@
 import {Component} from 'react'
 import './index.css'; // Import the CSS file with animation styles
-let interval=null
+let intervall=null
 
 const DisplayItem=(props)=>{
   const {itemDetails}=props
@@ -18,11 +18,11 @@ class MoveBar extends Component{
    }  
 
    componentWillUnmount(){
-    clearInterval(interval)
+    clearInterval(intervall)
    }
 
    activateInterval=()=>{
-   interval = setInterval(() => {
+   intervall = setInterval(() => {
       this.setState(prevState=>({currentStatus:!prevState.currentStatus})); 
     }, 100);
    }

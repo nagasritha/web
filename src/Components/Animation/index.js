@@ -4,10 +4,10 @@ import './index.css';
 const AnimatedParagraph = (props) => {
   const { text } = props;
   const [displayText, setDisplayText] = useState([]);
-  const [isAnimating, setIsAnimating] = useState(true);
+  const [isAnimatin, setIsAnimating] = useState(true);
 
   useEffect(() => {
-    if (isAnimating) {
+    if (isAnimatin) {
       let currentIndex = 0;
       const interval = setInterval(() => {
         if (currentIndex < text.length) {
@@ -28,10 +28,10 @@ const AnimatedParagraph = (props) => {
 
       return () => clearInterval(interval);
     }
-  }, [text, isAnimating]);
+  }, [text, isAnimatin]);
 
   return (
-    <p className={`animated-paragraph ${isAnimating ? 'typing' : 'exit'}`}>
+    <p className={`animated-paragraph ${isAnimatin ? 'typing' : 'exit'}`}>
       {displayText.map((letterObj) => (
         <span key={letterObj.id}>{letterObj.letter}</span>
       ))}
