@@ -7,7 +7,7 @@ const Optional=()=>{
 
    return ( 
    <div>
-       <div className='optional'>
+       <div className='optionall'>
         <div className='row'>
             <img src='https://res.cloudinary.com/dwoqcvsxt/image/upload/v1690216991/google-stars_ku0e4a.png' alt='rating' className='rating'
             />

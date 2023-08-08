@@ -31,7 +31,7 @@ const AnimatedParagraph = (props) => {
   }, [text, isAnimatin]);
 
   return (
-    <p className={`animated-paragraph ${isAnimatin ? 'typing' : 'exit'}`}>
+    <p className={`animated-paragraph ${isAnimatin ? 'typingg' : 'exit'}`}>
       {displayText.map((letterObj) => (
         <span key={letterObj.id}>{letterObj.letter}</span>
       ))}

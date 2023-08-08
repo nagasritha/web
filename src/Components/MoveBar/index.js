@@ -32,7 +32,7 @@ class MoveBar extends Component{
     console.log(currentStatus)
     const {classValue,list}=this.props
     return (
-    <div className='inlineblock'>
+    <div className='inlineblockk'>
       <div className={`${classValue} ${currentStatus ? 'paused' : ''}`}>
     <div className="marquee-content">
       {list.map(item=><DisplayItem key={item.id} itemDetails={item}/>)}

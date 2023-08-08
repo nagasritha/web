@@ -258,7 +258,7 @@ const UserDetails=()=><div>
         </div>
         <MoveBar classValue='marquee-container1' list={firstCardsList}/>
       </div>
-        <div className='padding0'><MoveBar classValue='marquee-container2' list={specialCardsList}/></div>
+        <div className='padding00'><MoveBar classValue='marquee-container2' list={specialCardsList}/></div>
    </div>
   <div id='section2'>
         
